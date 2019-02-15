@@ -33,10 +33,13 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                         padding: 10;
                     }
                     .imgbox {
-                        // display: block;
-                        max-width: 70%;
-                        height: auto%;
-                        padding: 20%;
+                        display: grid;
+                        height: 100%;
+                    }
+                    .center-fit {
+                    max-width: 100%;
+                    max-height: 100vh;
+                    margin: auto;
                     }
                 </style>
                 </link>
@@ -69,7 +72,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
         <div>
             <div class="imgbox">
-                <img src="./dark_photo.jpg"/>
+                <img src="./dark_photo.jpg" class="center-fit"/>
             </div>
         </div>
     </body>
