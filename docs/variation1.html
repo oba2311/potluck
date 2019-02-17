@@ -1,20 +1,28 @@
 <!DOCTYPE html>
     <head>
-   
-<!-- Google Analytics -->
+    <!-- Anti-flicker snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-MZ5QKBT':true});</script>
+
+<!-- Modified Analytics tracking code with Optimize plugin -->
 <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
         
-        ga('create', 'UA-98479292-3', 'auto');
+        ga('create', 'UA-98479292-5', 'auto');
+        ga('require', 'GTM-MZ5QKBT');
         ga('send', 'pageview');
         </script>
 <!-- End Google Analytics -->        
-        
 
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Potluck time!</title>
         <meta name="description" content="">
@@ -25,53 +33,37 @@
                         margin: 10;
                         padding: 10;
                     }
-                    .imgbox {
-                        display: grid;
-                        height: 100%;
-                    }
-                    .center-fit {
-                        max-width: 50%;
-                        max-height: 100vh;
-                        margin: auto;
-                    }
-                    .unsplash_link{
-                        max-width: 60%;
-                        max-width: 5%;
-                        max-height: 100vh;
-                        margin: auto;
-                    }
                 </style>
-    </head>
+                </link>
+                </meta></meta></meta></meta></head>
     <body>
 
             <div style="margin: 0 auto; text-align: center">
                 <pre>
 
                 </pre>
-                <p>
+                <p >
                     The Potluck is coming!
                   </p>
               <!--[if lt IE 7]>
                   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
               <![endif]-->
               
-
               <a 
               href="https://goo.gl/forms/JRihdkBhYWI24kum2"
-              target="_blank">
-              Sign up to get notified when we launch!
+              target="_blank"
+              style="color: rgb(0,255,0)">
+              <font color="#0000FF">
+              Sign up to get notified when we launch!   
+            </font>
                 </a>
+            </div>
+
+                <p></p>
                 <p></p>
 
-            <div class="imgbox">
-
-            <img src="./light_photo.jpg" class="center-fit"  alt="logo" />
-            
-        </div>
-    </div>
-    <div class="unsplash_link">
-            <p></p>
-            <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system,BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;,Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@44degreesnorth?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from 44 Degrees North"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px;font-size: 8px">Photo by Rachel Park</span></a>
-    </div>
+                <img  src="./light_photo.jpg" style="max-width:60%;height:auto;
+                display: block; margin-left: auto; margin-right: auto;"/>
     </body>
+    
 </html>
