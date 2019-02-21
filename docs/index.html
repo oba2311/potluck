@@ -17,8 +17,14 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         
         ga('create', 'UA-98479292-5', 'auto');
         ga('require', 'GTM-MZ5QKBT');
+        ga('require', 'eventTracker');
+        // added tracking features for analytics:
+        // ga('require', 'outboundLinkTracker');
+        // ga('require', 'urlChangeTracker');
+
         ga('send', 'pageview');
         </script>
+        <script async src="./node_modules/autotrack/autotrack.js"></script>
 <!-- End Google Analytics -->        
 
         <meta charset="utf-8">
@@ -50,8 +56,13 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
               <!--[if lt IE 7]>
                   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
               <![endif]-->
-              
+
+ <!-- Google Analytics tracking for clicks on the link: -->
               <a 
+                ga-on="click"
+                ga-event-category="link"
+                ga-event-action="click">
+ 
               href="https://goo.gl/forms/JRihdkBhYWI24kum2"
               target="_blank">
               <font color="#0000FF">
