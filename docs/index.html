@@ -64,19 +64,19 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     * This function takes a valid URL string as an argument, and uses that
     * URL string as the event label.
     */
-    var trackOutboundLink = function(url) {
-       ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
-         function () {
-         document.location = url;
-         }
-       });
-    }
+    function handleOutboundLinkClicks(category, action, label) {
+   ga('send', 'event', {
+   eventCategory: category,
+   eventAction: action,
+   eventLabel: label
+ });
+}
     </script>
     
               <a 
               href="https://goo.gl/forms/JRihdkBhYWI24kum2"
               target="_blank"
-              onclick="trackOutboundLink('Google Form clicked'); return false;">
+              onclick="handleOutboundLinkClicks('EVENT CATEGORY' ,'click' , 'GForm' )";>
               <font color="#0000FF">
               Sign up to get notified when we launch!   
             </font>
