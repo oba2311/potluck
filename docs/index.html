@@ -58,13 +58,25 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
               <![endif]-->
 
  <!-- Google Analytics tracking for clicks on the link: -->
+ <script>
+    /**
+    * Function that tracks a click on an outbound link in Google Analytics.
+    * This function takes a valid URL string as an argument, and uses that
+    * URL string as the event label.
+    */
+    var trackOutboundLink = function(url) {
+       ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+         function () {
+         document.location = url;
+         }
+       });
+    }
+    </script>
+    
               <a 
-                ga-on="click"
-                ga-event-category="link"
-                ga-event-action="click"
- 
               href="https://goo.gl/forms/JRihdkBhYWI24kum2"
-              target="_blank">
+              target="_blank"
+              onclick="trackOutboundLink('Google Form clicked');>
               <font color="#0000FF">
               Sign up to get notified when we launch!   
             </font>
