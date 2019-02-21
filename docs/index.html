@@ -15,7 +15,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
         
-        ga('create', 'UA-98479292-5', 'auto');
+        // ga('create', 'UA-98479292-5', 'auto');
         // ga('require', 'GTM-MZ5QKBT');
         ga('require', 'eventTracker');
         // added tracking features for analytics:
@@ -65,7 +65,8 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     * URL string as the event label.
     */
     function handleOutboundLinkClicks(category, action, label) {
-   ga('send', 'event', {
+   ga('send',  {
+    hitType: 'event',
    eventCategory: category,
    eventAction: action,
    eventLabel: label
@@ -76,7 +77,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
               <a 
               href="https://goo.gl/forms/JRihdkBhYWI24kum2"
               target="_blank"
-              onclick="handleOutboundLinkClicks('EVENT CATEGORY' ,'click' , 'GForm' )";>
+              onclick="handleOutboundLinkClicks('conversation' ,'click' , 'GForm' )";>
               <font color="#0000FF">
               Sign up to get notified when we launch!   
             </font>
