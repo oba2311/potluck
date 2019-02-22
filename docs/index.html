@@ -124,22 +124,12 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
             </a>                    
 
 <!-- Add Pixel Events to the button's click handler -->
-<script type="text/javascript">
-    var button = document.getElementById('GForm');
-    button.addEventListener(
-      'click', 
-      function() { 
-        fbq('track', 'GForm', {
-          content_name: 'Really Fast Running Shoes', 
-          content_category: 'Apparel & Accessories > Shoes',
-          content_ids: ['1234'],
-          content_type: 'product',
-          value: 4.99,
-          currency: 'USD' 
-        });          
-      },
-      false
-    );
+<script>
+    fbq('track', 'Subscribe', {
+      value: 1,
+      currency: 'USD',
+      predicted_ltv: '1',
+    });
   </script>
   
 
