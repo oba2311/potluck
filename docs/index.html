@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <head>
+ <head>
     <!-- Anti-flicker snippet (recommended)  -->
 <style>.async-hide { opacity: 0 !important} </style>
 <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
@@ -45,21 +45,19 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
 <!-- Facebook Pixel Code -->
 <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '378038696085366');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=378038696085366&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
+    fbq('track', 'ViewContent', {
+      content_name: 'Really Fast Running Shoes',
+      content_category: 'Apparel & Accessories > Shoes',
+      content_ids: ['1234'],
+      content_type: 'product',
+      value: 0.50,
+      currency: 'USD'
+     });
+    </script>
+    <!-- End Facebook Pixel Code -->
+
+    <link rel="stylesheet" href="./style.css" />
+
 
             </head>
     <body>
@@ -96,14 +94,14 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     
 
     <!-- WIP -->
-              <button
+              <a
               onclick="handleOutboundLinkClicks('conversion' ,'click' , 'GForm' )";
               href="https://goo.gl/forms/JRihdkBhYWI24kum2"
               target="_blank">
-              <font color="#0000FF">
+              <button class="btn">
               Sign up to get notified when we launch!   
-            </font>
-        </button>                    
+            </button>
+            </a>                    
 
                 <p></p>
                 <p></p>
