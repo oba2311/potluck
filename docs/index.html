@@ -98,10 +98,30 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
               onclick="handleOutboundLinkClicks('conversion' ,'click' , 'GForm' )";
               href="https://goo.gl/forms/JRihdkBhYWI24kum2"
               target="_blank">
-              <button class="btn">
+              <button class="GForm">
               Sign up to get notified when we launch!   
             </button>
             </a>                    
+
+<!-- Add Pixel Events to the button's click handler -->
+<script type="text/javascript">
+    var button = document.getElementById('GForm');
+    button.addEventListener(
+      'click', 
+      function() { 
+        fbq('track', 'AddToCart', {
+          content_name: 'Really Fast Running Shoes', 
+          content_category: 'Apparel & Accessories > Shoes',
+          content_ids: ['1234'],
+          content_type: 'product',
+          value: 4.99,
+          currency: 'USD' 
+        });          
+      },
+      false
+    );
+  </script>
+  
 
                 <p></p>
                 <p></p>
