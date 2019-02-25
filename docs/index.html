@@ -17,14 +17,20 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         
         ga('create', 'UA-98479292-5', 'auto');
         ga('require', 'GTM-MZ5QKBT');
-        ga('require', 'eventTracker');
-        // added tracking features for analytics:
-        ga('require', 'outboundLinkTracker');
-        ga('require', 'urlChangeTracker');
 
         ga('send', 'pageview');
         </script>
-        <script async src="./node_modules/autotrack/autotrack.js"></script>
+        
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98479292-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-98479292-5');
+</script>
+
 <!-- End Google Analytics -->        
 
         <meta charset="utf-8">
